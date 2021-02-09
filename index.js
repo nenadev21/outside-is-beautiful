@@ -81,7 +81,7 @@ function getWeatherConditions(response) {
   document.querySelector("#same-day-max-temp2").innerHTML = `${Math.round(
     response.data.main.temp_max
   )}°`;
-  document.querySelector("#feels-like").innerHTML = `Feeling like ${Math.round(
+  document.querySelector("#feels-like").innerHTML = `Feels like ${Math.round(
     response.data.main.feels_like
   )}°`;
   document.querySelector("#same-day-min-temp1").innerHTML = `${Math.round(
