@@ -5,7 +5,7 @@ function currentDayAndTime() {
   let daysIndex = [
     `Sunday`,
     `Monday`,
-    `Tueday`,
+    `Tuesday`,
     `Wednesday`,
     `Thursday`,
     `Friday`,
