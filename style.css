@@ -34,3 +34,7 @@ h5 .grados {
 #feels-like, #current-temperature, #weather-conditions, #selected-location, #fa-cloud-sun-rain {
   color: #fff;
 }
+
+p {
+  text-align: center;
+}
