@@ -38,3 +38,8 @@ h5 .grados {
 p {
   text-align: center;
 }
+
+.weather-video {
+  display:block;
+  margin: 0 auto;
+}
