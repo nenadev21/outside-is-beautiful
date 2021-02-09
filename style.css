@@ -29,3 +29,8 @@ h1 {
 
 h5 .grados {
   font-size: 15px;
+}
+
+#feels-like, #current-temperature, #weather-conditions, #selected-location, #fa-cloud-sun-rain {
+  color: #fff;
+}
