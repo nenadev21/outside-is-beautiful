@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+li {
+  display: block;
+  font-size: 18px;
+}
+i {
+  color: #fffff;
+  font-size: 34px;
+}
+h1 {
+  font-weight: 900;
+}
+
+#zip-code-button1 {
+  background-color: #30cfd0;
+  display: relative;
+  margin-right: 530px;
+}
+
+.degrees,
+.fahrenheit {
+  position: relative;
+  bottom: 50px;
+  left: 135px;
+}
+
+h5 .grados {
+  font-size: 15px;
