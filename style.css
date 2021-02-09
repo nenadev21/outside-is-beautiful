@@ -2,16 +2,12 @@ body {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
-li {
-  display: block;
-  font-size: 18px;
-}
 i {
-  color: #fffff;
   font-size: 34px;
 }
 h1 {
   font-weight: 900;
+  color: #fff;
 }
 
 #zip-code-button1 {
@@ -42,4 +38,33 @@ h5 .grados {
 .weather-video {
   display:block;
   margin: 0 auto;
+}
+
+i {
+  font-size: medium;
+
+}
+.social-media {
+
+  display: block;
+  margin: 0 auto;
+  text-align: center !important;
+  font-size: small;
+  color:  rgba(39,33,66,0.7);
+}
+
+.social-media-link {
+  color:  rgba(39,33,66,0.7);
+}
+
+
+li {
+  display: inline-block;
+  padding: 8px;
+}
+
+
+.social-media-link:hover {
+text-decoration: underline;
+color: #482c6b;
 }
