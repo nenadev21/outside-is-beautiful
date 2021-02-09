@@ -33,6 +33,7 @@ h5 .grados {
 
 .coder-name {
   text-align: center;
+  color: rgba(39,33,66,0.7);
 }
 
 .weather-video {
@@ -40,7 +41,7 @@ h5 .grados {
   margin: 0 auto;
 }
 
-i {
+#linkedin, #email, #twitter, #facebook, #github {
   font-size: medium;
 
 }
