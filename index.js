@@ -140,6 +140,16 @@ zipCodeButton.addEventListener("click", callNavigator);
 search("Antofagasta");
 
 
+//after a city is typed or identified through user's location, that should call the imageAPI (which call won't be here probably)
+// then it should get an image as response
+// This function intend to get the image response from the api - route the image data 
+
+function getCityImage(response) {
+  console.log(response);
+}
+
+
+
 
   
 
