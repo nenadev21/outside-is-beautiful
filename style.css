@@ -1,22 +1,19 @@
 
 body {
-
-  background: 
-  url("https://images.unsplash.com/photo-1549490316-686f9b5d359f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-  background-repeat: repeat;
-  background-size: 100%;
-}
-/* body {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
-*/
 
-#image-from-search {
-  
-  position: absolute;
-  margin-top: 80px;
-  margin-left: 350px;
-  margin-right: 20px;
+
+.weather-app-wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 10px 20px 10px 20px;
+}
+
+#city-name {
+  font-weight: bold;
 }
 
 i {
@@ -30,7 +27,7 @@ h1 {
 #zip-code-button1 {
   background-color: #30cfd0;
   display: relative;
-  margin-right: 530px;
+  margin-right: 135px;
 }
 
 .degrees,
@@ -40,22 +37,25 @@ h1 {
   left: 135px;
 }
 
-h5 .grados {
-  font-size: 15px;
-}
+
 
 #feels-like, #current-temperature, #weather-conditions, #selected-location, #fa-cloud-sun-rain {
   color: #fff;
 }
 
+.col {
+  padding: 0;
+  margin: 3px;
+
+}
+
+#area-text-search {
+  margin: 2px;
+}
+
 .coder-name {
   text-align: center;
   color: rgba(39,33,66,0.7);
-}
-
-.weather-video {
-  display:block;
-  margin: 0 auto;
 }
 
 #linkedin, #email, #twitter, #facebook, #github {

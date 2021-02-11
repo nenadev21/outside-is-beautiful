@@ -78,13 +78,13 @@ function getWeatherConditions(response) {
   document.querySelector("#current-temperature").innerHTML = `${Math.round(
     response.data.main.temp
   )}°`;
-  document.querySelector("#same-day-max-temp2").innerHTML = `${Math.round(
+  document.querySelector("#same-day-max").innerHTML = `${Math.round(
     response.data.main.temp_max
   )}°`;
   document.querySelector("#feels-like").innerHTML = `Feels like ${Math.round(
     response.data.main.feels_like
   )}°`;
-  document.querySelector("#same-day-min-temp1").innerHTML = `${Math.round(
+  document.querySelector("#same-day-min").innerHTML = `${Math.round(
     response.data.main.temp_min
   )}°`;
   document.querySelector(

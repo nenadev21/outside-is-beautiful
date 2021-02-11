@@ -12,13 +12,12 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
     <script
       src="https://kit.fontawesome.com/222c4be5e5.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
 
@@ -30,11 +29,11 @@
 
 
 
-
-      <div class='container-fluid'>
+<div class="weather-app-wrapper"> 
+      <div id="search-bar1" class='container-fluid'>
       <div class="row">
         <form class="row g-3" id="search-bar" >
-          <div class="col-md-5">
+          <div id="area-text-search" class="col-md-5">
             <input
               type="text"
               class="form-control"
@@ -55,7 +54,6 @@
   <div class="row">
     <div class="col-6">
         <div id="city-name" class="row">
-          City
           </div>
           <div id="day-and-time" class="row">
           </div>
@@ -104,81 +102,81 @@
   </br>
 
       <div class='container-fluid'>
-      <div class="row width="100px">
-        <div class="col-sm-2">
+      <div class="row">
+        <div class="col">
           <div class="card text-center">
             <div class="card-body bg-transparent">
-              <h5 class="card-title">Mon</h5>
+              <h5 class="day" class="card-title">Mon</h5>
               <i class="fas fa-cloud-sun-rain"></i>
               <div class="row">
-                <div class="col-6">
-                  <h5 id="same-day-min-temp1" class="card-title p-1">44°</h5>
+                <div id="same-day" class="col">
+                  <h5 id="same-day-min" class="card-title p-1">44°</h5>
                 </div>
-                <div class="col-6">
-                  <h5 id="same-day-max-temp2" class="card-title p-1">33°</h5>
+                <div class="col">
+                  <h5 id="same-day-max" class="card-title p-1">33°</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-                <div class="col-sm-2">
+                <div class="col">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title">Tue</h5>
+              <h5 class="day" class="card-title">Tue</h5>
               <i class="fas fa-sun"></i>
               <div class="row">
-                <div class="col-6">
+                <div id="day-plus-one" class="col">
                        <h5 class="card-title p-1">44°</h5>
                 </div>
-                <div class="col-6">
+                <div class="col">
                   <h5 class="card-title p-1">33°</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title">Wed</h5>
+              <h5 class="day" class="card-title">Wed</h5>
               <i class="fas fa-cloud-sun"></i>
               <div class="row">
-                <div class="col-6">
+                <div id="day-plus-two" class="col">
                       <h5 class="card-title p-1">44°</h5>
                 </div>
-                <div class="col-6">
+                <div class="col">
                   <h5 class="card-title p-1">33°</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title">Thu</h5>
+              <h5 class="day" class="card-title">Thu</h5>
               <i class="fas fa-snowflake"></i>
               <div class="row">
-                <div class="col-6">
+                <div id="day-plus-three" class="col">
                        <h5 class="card-title p-1">25°</h5>
                 </div>
-                <div class="col-6">
+                <div class="col">
                   <h5 class="card-title p-1">18°</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title">Fri</h5>
+              <h5 class="day" class="card-title">Fri</h5>
               <i class="fas fa-cloud-sun-rain"></i>
               <div class="row">
-                <div class="col-6">
+                <div id="day-plus-four" class="col">
                        <h5 class="card-title p-1" class="grados">44°</h5>
                 </div>
-                <div class="col-6">
+                <div class="col">
                   <h5 class="card-title p-1">33°</h5>
                 </div>
               </div>
@@ -225,6 +223,7 @@
 
 </br>
  </br>
+ </div>
     <script src="index.js">
     
  
