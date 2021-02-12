@@ -17,23 +17,18 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
   </head>
 
 
 
 <body>
 
-
-
-
-
-
 <div class="weather-app-wrapper"> 
       <div id="search-bar1" class='container-fluid'>
       <div class="row">
         <form class="row g-3" id="search-bar" >
-          <div id="area-text-search" class="col-md-5">
+          <div id="area-text-search"class="col-md-5">
             <input
               type="text"
               class="form-control"
@@ -42,10 +37,10 @@
             />
 					</div>
           <div class="col">
-            <button class="btn btn-success mb-3" type="submit">Search</button>
+            <button class="btn btn-success mb-1" type="submit">Search</button>
           </div>
         <div class="col">
-            <button id="zip-code-button1" class="btn btn-success mb-3" type="submit">Location</button>
+            <button id="zip-code-button1" class="btn btn-success mb-1" type="submit">Location</button>
           </div>
         </form>
       </div>
@@ -102,9 +97,10 @@
   </br>
 
       <div class='container-fluid'>
-      <div class="row">
-        <div class="col">
-          <div class="card text-center">
+      <div class="row"> 
+        <a href="pages/page2.html" target="_parent">
+          <div class="col">
+          <div class="card text-center"> 
             <div class="card-body bg-transparent">
               <h5 class="day" class="card-title">Mon</h5>
               <i class="fas fa-cloud-sun-rain"></i>
@@ -116,7 +112,9 @@
                   <h5 id="same-day-max" class="card-title p-1">33°</h5>
                 </div>
               </div>
+              
             </div>
+            </a>
           </div>
         </div>
                 <div class="col">
@@ -224,7 +222,7 @@
 </br>
  </br>
  </div>
-    <script src="index.js">
+    <script src="src/index.js">
     
  
     

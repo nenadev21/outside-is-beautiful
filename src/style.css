@@ -46,11 +46,31 @@ h1 {
 .col {
   padding: 0;
   margin: 3px;
+}
 
+h5 {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-cloud-sun-rain {
+  color: rgba(39,33,66,0.7);
 }
 
 #area-text-search {
   margin: 2px;
+}
+
+.card {
+  transition: 150ms ease-in-out;
+}
+
+.card:hover {
+  background:#328BAC;
 }
 
 .coder-name {
@@ -85,4 +105,48 @@ li {
 .social-media-link:hover {
 text-decoration: underline;
 color: #482c6b;
+}
+
+.profile {
+  border-radius: 100px;
+    border: solid 1px #efefef;
+    display: block;
+    height: 50px;
+    margin: 10px auto 10px;
+    width: 50px;
+
+}
+
+.fa-user-alt {
+  height: 100%;
+    left: 0;
+    position: absolute;
+    top: 170px;
+    width: 100%;
+    color: black;
+}
+
+#heart { 
+    position: relative; 
+    width: 100px; 
+    height: 90px; 
+} 
+
+#heart:before, #heart:after { 
+    position: absolute; 
+    content: ""; 
+    left: 50px; 
+    top: 0; 
+    width: 50px; 
+    height: 80px; 
+    background: rgb(163, 117, 117); 
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+} 
+
+#heart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :100% 100%; 
 }

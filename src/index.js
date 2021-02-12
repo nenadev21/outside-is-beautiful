@@ -93,6 +93,8 @@ function getWeatherConditions(response) {
   document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
     response.data.wind.speed
   )} mph`;
+
+  celsiusTemp = response.data.main.temp;
 }
 
 //This gets the city typed by the user and input that into the document
@@ -137,25 +139,32 @@ function callNavigator(response) {
 let zipCodeButton = document.querySelector("#zip-code-button1");
 zipCodeButton.addEventListener("click", callNavigator);
 
-search("Antofagasta");
+let celsiusTemp = null;
 
-
-//after a city is typed or identified through user's location, that should call the imageAPI (which call won't be here probably)
-// then it should get an image as response
-// This function intend to get the image response from the api - route the image data 
-
-function getCityImage(response) {
-  console.log(response);
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  document.querySelector("#current-temperature").innerHTML = `${Math.round(
+    celsiusTemp * 1.8 + 32)}°`;
 }
 
 
 
-
-  
-
-
+let fahrenheit = document.querySelector("#fahrenheit-button");
+fahrenheit.addEventListener("click", displayFahrenheitTemp);
 
 
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  document.querySelector("#current-temperature").innerHTML = `${Math.round(
+    celsiusTemp)}°`;
+}
 
 
+
+let celsius = document.querySelector("#degrees-button");
+celsius.addEventListener("click", displayCelsiusTemp);
+
+
+
+search("Antofagasta");
 
