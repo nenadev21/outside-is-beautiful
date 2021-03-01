@@ -77,7 +77,7 @@ monthAndYear.innerHTML = currentDateAndYear();
 
 function getWeatherConditions(response) {
   console.log(response.data);
-  document.querySelector("#city-name2").innerHTML = response.data.name;
+  document.querySelector("#city-name2").innerHTML = `${response.data.name}, ${response.data.sys.country}`;
   document.querySelector("#current-temperature").innerHTML = `${Math.round(
     response.data.main.temp
   )}°`;
@@ -85,16 +85,17 @@ function getWeatherConditions(response) {
   document.querySelector("#icon").setAttribute("src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   
-  document.querySelector("#weather-description").innerHTML = response.data.weather[0].main;
-  document.querySelector("#feels-like").innerHTML = `Feels like ${Math.round(
-    response.data.main.feels_like
-  )}°`;
+  document.querySelector("#weather-description").innerHTML = `...${response.data.weather[0].main}...`;
+  
   document.querySelector(
     "#humidity"
-  ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
-  document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
+  ).innerHTML = `<strong> Humidity: </strong> ${response.data.main.humidity}%`;
+  document.querySelector("#wind").innerHTML = `<strong> Wind: </strong> ${Math.round(
     response.data.wind.speed
   )} mph`;
+  document.querySelector("#feels-like").innerHTML = `<strong> Feels like: </strong> ${Math.round(
+    response.data.main.feels_like
+  )}°`;
 
   celsiusTemp = response.data.main.temp;
 }
@@ -121,14 +122,14 @@ function getForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null; // this is to clean up the document with each search 
 
-  for (let index = 0; index < 6; index++) { //this loops until the defined item in a array
+  for (let index = 0; index < 5; index++) { //this loops until the defined item in a array
   
     forecast = response.data.list[index];
     
     //Here JS is injecting info into the document. 
     forecastElement.innerHTML += //the += tells JS to aggregates the info from the array to the prior one
       `<div class="col">
-          <div class="card text-center"> 
+          <div id="forecast-card" class="card text-center"> 
             <div class="card-body bg-transparent">
               <h5 class="card-title"> ${formatHours(forecast.dt * 1000)}</h5>
               <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width="50px"/>
@@ -242,5 +243,5 @@ celsius.addEventListener("click", displayCelsiusTemp);
 
 
 
-search("Santiago");
+search("Boston");
 

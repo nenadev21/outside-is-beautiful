@@ -23,12 +23,13 @@
 
 
 <body>
-
-<div class="weather-app-wrapper"> 
-      <div id="search-bar1" class='container-fluid'>
+<div class="weather-app-wrapper">
+<div class="container">
+  
+      <div id="search-bar1" class='container-fluid'> 
       <div class="row">
-        <form class="row g-3" id="search-bar" >
-          <div id="area-text-search"class="col-md-5">
+        <form class="row g-lg-4" id="search-bar" >
+          <div id="area-text-search"class="col-6">
             <input
               type="text"
               class="form-control"
@@ -37,83 +38,73 @@
             />
 					</div>
           <div class="col">
-            <button class="btn btn-success mb-1" type="submit">Search</button>
+            <button id="search-button" class="btn btn-success mb-1" type="submit">Search</button>
           </div>
         <div class="col">
             <button id="zip-code-button1" class="btn btn-success mb-1" type="submit">Location</button>
           </div>
         </form>
       </div>
+    </div>
+
     </br>
-      <div id="selected-location" class='container-fluid'>
+
+      
+        <h4 id="city-name2"> 
+        </h4>
+
+<div id="selected-location" class='container-fluid'>
   <div class="row">
     <div class="col-6">
-        <div id="city-name2" class="row"> 
-          </div>
-          <div id="day-and-time" class="row">
-          </div>
-          <div id="month-and-year" class="row">
-          </div>
-          <div class="row">
-              
-          </div>
+      <div id="day-and-time" class="row">
+      </div>
+      <div id="month-and-year" class="row">
+      </div>
     </div>
     <div id="weather-conditions" class="col-6">
-        <div class="row">
-          </div>
-          <div class="row">
-          </div>
-            <div id="humidity" class="row">
-                Humidity: 55%
-            </div>
-          <div id="wind" class="row">
-              Wind: 5 mph
-          </div>
-    </div>
-    </div>
-   </div>
-</div>
-</br>
-</br>
-
-<div class='container-fluid'>
-          <h1 >
-            <img
-            id="icon"
+      <div class="row">
+        <h1 >
+          <img
+          id="icon"
           class="icon"
           src="http://openweathermap.org/img/wn/10d@2x.png"
           width="50px"
           height="50px"
-        />
-
-            <span id="current-temperature"> 17 </span>
-          </h1>
-            <span class="degrees"> <a href="#" id="degrees-button"> °C </a> <span> | </span> </span>
+          />
+          <span id="current-temperature"> 17 </span>   
+        </h1>
+          <span class="degrees"> <a href="#" id="degrees-button"> °C </a>  | </span> 
           <span class="fahrenheit"> <a href="#" id="fahrenheit-button"> °F </a> </span>
-        </div>
-        <div class='container-fluid'>
-       <p id="weather-description">
-      </p>
-      <p id="feels-like">
-      </p>
     </div>
-  </br>
-
+  </div>  
+<div class="container">
+        <div id="test" class="row">
+          <div class="col-6">
+<p id="weather-description1">
+          </p>
+          </div>
+          <div class="col-6">
+<p id="weather-description">
+          </p>
+          </div>
+        </div>  
+</div>
+<div class="weather-conditions">
+  <li id="humidity">
+  </li>
+  <li id="wind">
+  </li>
+  <li id="feels-like">
+  </li>
+</div>  
       <div class='container-fluid'>
       <div class="row" id="weather-forecast"> 
-          
+          </div>
         </div>
-        </div>
-               
-
-
-
-
-
   </br>
    </br>
 <p class="coder-name">
-    Find me 🌷  
+    Made with 💘 
   </p>
 <div class="social-media">
     <li>
@@ -138,17 +129,11 @@
     <p> Fully open source
   <i id="github" class="fab fa-github"></i>
       <a class="social-media-link" href="https://github.com/nenadev21/outside-is-beautiful" target="_blank"> GitHub </a>
-    
     </p>
-    
-    
-
   </div>
-
-
-</br>
- </br>
  </div>
+ </div>
+</div>
     <script src="src/index.js">
     
  

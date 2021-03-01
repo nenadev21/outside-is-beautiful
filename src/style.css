@@ -1,19 +1,22 @@
 
 body {
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  
 }
 
-
 .weather-app-wrapper {
-  border: 1px solid black;
-  border-radius: 5px;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  border: 1px solid #482c6b;
+  border-radius: 35px;
   max-width: 600px;
   margin: 30px auto;
   padding: 10px 20px 10px 20px;
 }
 
-#city-name {
-  font-weight: bold;
+#city-name2 {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(39,33,66,0.9);
 }
 
 i {
@@ -26,21 +29,59 @@ h1 {
 
 #zip-code-button1 {
   background-color: #30cfd0;
-  display: relative;
-  margin-right: 135px;
+  margin-left: -10px;
+  border: none;
 }
 
-.degrees,
+#search-bar1 {
+  text-align: center;
+  margin-left: -16px;
+  margin-top: 10px;
+}
+
+#current-temperature {
+  font-size: 40px;
+}
+
+#icon {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  left: 16px;
+  bottom: 4px;
+}
+
+.degrees {
+  position: relative;
+  bottom: 60px;
+  left: 145px;
+  font-size: 12px;
+}
+
 .fahrenheit {
   position: relative;
-  bottom: 50px;
-  left: 135px;
+  bottom: 78px;
+  left: 165px;
+  font-size: 12px;
 }
+
+#weather-description {
+  position: relative;
+  margin-left: 58px;
+  margin-top: -60px;
+  font-style: italic;
+  font-size: 14px;
+}
+
 
 
 
 #feels-like, #weather-description, #current-temperature, #weather-conditions, #selected-location, #fa-cloud-sun-rain {
-  color: #fff;
+  color: rgba(39,33,66,0.7);
+}
+
+#selected-location {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .col {
@@ -50,7 +91,8 @@ h1 {
 
 h5 {
   text-decoration: none;
-  color: black;
+  color: rgba(39,33,66,0.9);
+  font-size: 14px;
 }
 
 a {
@@ -65,17 +107,23 @@ a {
   margin: 2px;
 }
 
-.card {
+#forecast-card {
+  background: #89BBD4;
   transition: 150ms ease-in-out;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  
 }
 
-.card:hover {
-  background:#328BAC;
+
+#forecast-card:hover {
+  background: #A59FCE;
 }
 
 .coder-name {
   text-align: center;
   color: rgba(39,33,66,0.7);
+  margin-top: 20px;
 }
 
 #linkedin, #email, #twitter, #facebook, #github {
@@ -90,6 +138,17 @@ a {
   font-size: small;
   color:  rgba(39,33,66,0.7);
 }
+
+.weather-conditions {
+
+  display: block;
+  text-align: center !important;
+  color:  rgba(39,33,66,0.7);
+  margin-bottom: 30px;
+  margin-top: 0 auto;
+}
+
+
 
 .social-media-link {
   color:  rgba(39,33,66,0.7);
